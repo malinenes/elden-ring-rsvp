@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -48,7 +49,7 @@
       <section class="choices">
         <p class="choice-label">Approach the Grace - Make thy choice</p>
 
-        <button class="er-btn btn-yes" oneclick="goYes()">
+        <button class="er-btn btn-yes" onclick="goYes()">
           <span class="btn-arrow">›</span>
           <span class="btn-inner">
             <span class="btn-main">Touch Grace</span>
@@ -56,15 +57,15 @@
           </span>
         </button>
 
-        <button class="er-btn btn-no" oneclick="goNo()">
+        <button class="er-btn btn-no" onclick="goNo()">
           <span class="btn-arrow">›</span>
           <span class="btn-inner">
-            <span class="btn-main">Retunr to Fog</span>
+            <span class="btn-main">Return to Fog</span>
             <span class="btn-sub">I cannot make the journey</span>
           </span>
         </button>
 
-        <button class="er-btn btn-maybe" oneclick="goMaybe()">
+        <button class="er-btn btn-maybe" onclick="goMaybe()">
           <span class="btn-arrow">›</span>
           <span class="btn-inner">
             <span class="btn-main">Place Summon Sign</span>
@@ -75,5 +76,12 @@
         </button>
       </section>
     </main>
+
+    <main id="screen-yes" class="screen"></main>
+
+    <main id="screen-no" class="screen"></main>
+
+    <main id="screen-maybe" class="screen"></main>
+    <script src="script.js"></script>
   </body>
 </html>
