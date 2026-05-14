@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d0b08;
+  color: #c8b89a;
+  font-family: "Cinzel", serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #7a6a55;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.2 rem;
+}
+
+.eyebrow-small {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #5a4a35;
+  text-transform: uppercase;
+}
+
+.boss-title {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #c8a84b;
+  letter-spacing: 3px;
+  text-shadow: 0 0 40px rgba(200, 168, 75, 0.3);
+}
+
+.boss-subtitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #9a8060;
+  text-transform: uppercase;
+}
+
+.lore {
+  font: size 12px;
+  color: #8a7a65;
+  font-style: italic;
+  line-height: 2;
+  max-width: 340px;
+}
+
+.date-badge {
+  border: 1px solid #3a2e1a;
+  padding: 0.5rem 1.5rem;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #c8a84b;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 280px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #8a6a30, transparent);
+  margin: 0 auto;
+}
+
+.rune-bar {
+  width: 100%;
+  max-width: 460px;
+  margin: 1.5rem 0;
+}
+
+.rune-label-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #7a6a55;
+  text-transform: uppercase;
+}
+
+.rune-track {
+  height: 6px;
+  background: #1a1510;
+  border: 1px solid #3a2e1a;
+}
+
+.rune-fill {
+  height: 100%;
+  width: 24%;
+  background: linear-gradient(90deg, #6a4a10, #c8a84b, #e8c86b);
+}
+
+/*Buttons*/
+
+.choice-label {
+  font-size: 9px;
+  letter-spacing: 5px;
+  color: #4a2a7a;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.5rem 0 1rem;
+  color: #5a4a35;
+}
+
+.er-btn {
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding: 1.4rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #2a2015;
+  color: #a89070;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition:
+    color 0.2s,
+    padding-left 0.2s;
+}
+
+.er-btn:last-child {
+  border-bottom: 1px solid #2a2015;
+}
+
+.er-btn:hover {
+  color: #e8d0a0;
+  background: rgba(200, 168, 75, 0.05);
+  padding-left: 2.5rem;
+}
+
+.btn-arrow {
+  color: #c8a84b;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+er-btn:hover btn-arrow {
+  opacity: 1;
+}
+
+.btn-main {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #c8b89a;
+  text-transform: uppercase;
+}
+
+.btn-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.btn-sub {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #9a8a75;
+  font-style: italic;
+}
+
+.btn-no .btn-main {
+  color: #7a3030;
+}
+.btn-maybe .btn-main {
+  color: #8a8470;
+}

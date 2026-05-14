@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malin & Johannes - Their Thirtieth Year</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="screen-main" class="screen active">
+      <header>
+        <p class="eyebrow">A grand feast shall be held</p>
+        <div class="divider"></div>
+
+        <p class="eyebrow-small">Malin og Johannes presents</p>
+        <h1 class="boss-title">Their Thirtieth Year</h1>
+        <p class="boss-subtitle">Tarnished of the Lands Between - Naustet</p>
+
+        <div class="divider"></div>
+
+        <p class="lore">
+          "Seek the boons of fellowship. Two Tarnished,<br />
+          thirty years in the making, now rise to host <br />
+          a feast worthy of the Elden Ring itself."
+        </p>
+
+        <div class="date-badge">
+          <p>The 20th of June - Anno MMXXVI</p>
+        </div>
+      </header>
+      <section class="rune-bar">
+        <div class="rune-label-row">
+          <span>✨ Runes Gathered</span>
+          <span id="rune-count">7/30</span>
+        </div>
+        <div class="rune-track">
+          <div class="rune-fill" id="rune-fill"></div>
+        </div>
+      </section>
+
+      <section class="choices">
+        <p class="choice-label">Approach the Grace - Make thy choice</p>
+
+        <button class="er-btn btn-yes" oneclick="goYes()">
+          <span class="btn-arrow">›</span>
+          <span class="btn-inner">
+            <span class="btn-main">Touch Grace</span>
+            <span class="btn-sub">I shall attend. My runes are yours</span>
+          </span>
+        </button>
+
+        <button class="er-btn btn-no" oneclick="goNo()">
+          <span class="btn-arrow">›</span>
+          <span class="btn-inner">
+            <span class="btn-main">Retunr to Fog</span>
+            <span class="btn-sub">I cannot make the journey</span>
+          </span>
+        </button>
+
+        <button class="er-btn btn-maybe" oneclick="goMaybe()">
+          <span class="btn-arrow">›</span>
+          <span class="btn-inner">
+            <span class="btn-main">Place Summon Sign</span>
+            <span class="btn-sub"
+              >My fate is yet undecided. I await the call</span
+            >
+          </span>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
