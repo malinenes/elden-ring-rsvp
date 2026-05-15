@@ -28,6 +28,24 @@ body {
   align-items: center;
 }
 
+#fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  z-index: 100;
+}
+
+#fade-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -72,8 +90,8 @@ header {
 
 .lore {
   font-size: 12px;
-  color: #8a7a65;
-
+  color: #c8a84b;
+  letter-spacing: 1px;
   line-height: 2;
   max-width: 340px;
 }
@@ -83,7 +101,7 @@ header {
   padding: 0.5rem 1.5rem;
   font-size: 10px;
   letter-spacing: 4px;
-  color: #c8a84b;
+  color: #9a8060;
   text-transform: uppercase;
   margin-top: 1rem;
 }
@@ -220,6 +238,9 @@ header {
   position: relative;
   overflow: hidden;
   gap: 1.5rem;
+  width: 100vw;
+  max-width: 100%;
+  gap: 1.5rem;
 }
 
 .you-died-vignette {
@@ -228,23 +249,23 @@ header {
   background:
     radial-gradient(
       ellipse at top left,
-      rgba(120, 0, 0, 0.7) 0%,
-      transparent 50%
+      rgba(150, 0, 0, 0.8) 0%,
+      transparent 90%
     ),
     radial-gradient(
       ellipse at top right,
-      rgba(120, 0, 0, 0, 0.7) 0%,
-      transparent 50%
+      rgba(150, 0, 0, 0, 0.8) 0%,
+      transparent 90%
     ),
     radial-gradient(
       ellipse at bottom left,
-      rgba(120, 0, 0, 0.7) 0%,
-      transparent 50%
+      rgba(150, 0, 0, 0.8) 0%,
+      transparent 90%
     ),
     radial-gradient(
       ellipse at bottom right,
-      rgba(120, 0, 0, 0.7) 0%,
-      transparent 50%
+      rgba(150, 0, 0, 0.8) 0%,
+      transparent 90%
     );
   pointer-events: none;
 }
@@ -264,17 +285,17 @@ header {
 .you-died-sub {
   font-size: 11px;
   letter-spacing: 4px;
-  color: #4a3030;
+  color: #8b1a1a;
   text-align: center;
   text-transform: uppercase;
-  animation: diedfade 1.5s ease-out 1.8s both;
+  animation: died-fade 1.5s ease-out 1.8s both;
 }
 
 .you-died-lore {
   font-size: 12px;
-  color: #5a3535;
+  color: #8b1a1a;
   text-align: center;
-  font-style: italic;
+  letter-spacing: 2px;
   line-height: 2;
   animation: died-fade 1.5s ease-out 2.4s both;
 }
@@ -466,6 +487,7 @@ header {
 .summon-back-btn {
   border-color: #3a2e1a;
   color: #6a5a45;
+  animation: grace-in 1s ease-out 2s both;
 }
 
 .er-back-btn.summon-back-btn:hover {

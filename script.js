@@ -10,7 +10,13 @@ function goYes() {
 }
 
 function goNo() {
-  showScreen("screen-no");
+  const overlay = document.getElementById("fade-overlay");
+  overlay.classList.add("active");
+
+  setTimeout(() => {
+    showScreen("screen-no");
+    overlay.classList.remove("active");
+  }, 800);
 }
 
 function goMaybe() {
