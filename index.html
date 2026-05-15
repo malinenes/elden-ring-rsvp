@@ -35,6 +35,8 @@
         <div class="date-badge">
           <p>The 20th of June - Anno MMXXVI</p>
         </div>
+        <br>
+        <div class="divider-long"></div>
       </header>
       <section class="rune-bar">
         <div class="rune-label-row">
@@ -77,11 +79,40 @@
       </section>
     </main>
 
-    <main id="screen-yes" class="screen"></main>
+    <main id="screen-yes" class="screen">
+        <div class="grace-glow"></div>
+        <span class="grace-star">✦</span>
+        <div class="divider"></div>
+        <h2 class="grace-title">Grace Found</h2>
+        <p class="grace-subtitle">Party Member Summoned Successfully</p>
+        <div class="divider"></div>
+        <p class="grace-lore">Thy summon sign hath been accepted.<br>The Elden Ring of birthdays shall be complete.<br>Await the event. Bring thine apetite</p>
+        <buttton class="er-back-btn grace-back-btn" onclick="goBack()"> ← Return to Grace</buttton>
+    </main>
 
-    <main id="screen-no" class="screen"></main>
+    <main id="screen-no" class="screen">
+      <div class="you-died-vignette"></div>
+      <h2 class="you-died-text">YOU<br />DIED</h2>
+      <p class="you-died-sub">Lost to the fog - party member defeated</p>
+      <p class="you-died-lore">
+        "Thou hast chosen the mist over the feast.<br>Thy runes are forfeit</b>
+      </p>
 
-    <main id="screen-maybe" class="screen"></main>
+      <buttonn class="er-back-btn" onclick="goBack()"
+        >Attempt Resurrection</buttonn
+      >
+    </main>
+
+    <main id="screen-maybe" class="screen">
+        <div class="summon-orb">✦</div>
+        <h2 class="summon-title">Summon Sign Placed</h2>
+        <div class="divider"></div>
+        <p class="summon-lore">Thy sign glimmers upon the fog-covered ground.<br>When fate becomes clear, seek the Grace once more.<br> We shall await thy answere, Tarnished</p>
+        <div class="date-badge">
+            <p>20 Juni - Check Facebook</p>
+        </div>
+        <button class="er-back-btn summon-back-btn" onclick="goBack()">← Return</button>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

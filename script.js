@@ -20,7 +20,3 @@ function goMaybe() {
 function goBack() {
   showScreen("screen-main");
 }
-
-document.querySelectorAll(".er-btn").forEach((btn) => {
-  console.log("fann knapp:", btn);
-});
