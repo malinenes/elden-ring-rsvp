@@ -42,7 +42,7 @@
       <section class="rune-bar">
         <div class="rune-label-row">
           <span>✨ Runes Gathered</span>
-          <span id="rune-count">7/30</span>
+          <span id="rune-count">2/30</span>
         </div>
         <div class="rune-track">
           <div class="rune-fill" id="rune-fill"></div>
@@ -88,7 +88,19 @@
         <p class="grace-subtitle">Party Member Summoned Successfully</p>
         <div class="divider"></div>
         <p class="grace-lore">Thy summon sign hath been accepted.<br>The Elden Ring of birthdays shall be complete.<br>Await the event. Bring thine apetite</p>
-        <buttton class="er-back-btn grace-back-btn" onclick="goBack()"> ← Return to Grace</buttton>
+
+
+        <form id="rsvp-form" action="https://formspree.io/f/xpqnpaka" method="POST">
+          <input type="hidden" name="svar" value="Ja - Touch Grace">
+          <div class="form-group">
+            <label for="name">Ditt namn</label>
+            <input type="text" id="name" name="namn" placeholder="Skriv namnet ditt" required>
+          </div>
+          <button type="submit" class="form-submit">✦ Bekreft oppmøte</button>
+          
+        </form>
+        <button class="er-back-btn grace-back-btn" onclick="goBack()"> ← Return to Grace</button>
+        
     </main>
 
     <main id="screen-no" class="screen">
